@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --open",
+    "dev": "vite --open --host",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "preinstall": "node ./scripts/preinstall.js",
@@ -21,6 +21,7 @@
     "element-plus": "^2.7.4",
     "pinia": "^2.1.7",
     "reset-css": "^5.0.2",
+    "vite-plugin-svg-icons": "^2.0.1",
     "vue": "^3.4.21",
     "vue-router": "4"
   },
