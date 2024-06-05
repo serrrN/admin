@@ -1,7 +1,7 @@
 <template>
   <el-menu
     default-active="home"
-    :class="isCollapse?'el-menu-vertical-collapse':'el-menu-vertical'"
+    :class="isCollapse ? 'el-menu-vertical-collapse' : 'el-menu-vertical'"
     :collapse="isCollapse"
     :router="true"
     collapse-transition
@@ -17,7 +17,7 @@
       </div>
       <div class="fold-icon-wrapped" @click="handleCollapse">
         <el-icon size="18" color="rgb(64, 158, 255)">
-          <component :is="isCollapse?'Expand':'Fold'"></component>
+          <component :is="isCollapse ? 'Expand' : 'Fold'"></component>
         </el-icon>
       </div>
     </div>
@@ -116,9 +116,9 @@ const handleCollapse = () => {
   min-width: 20%;
 }
 //菜单处于塌陷状态
-.el-menu-vertical-collapse{
-  $layout-container-left-width:calc(var(--el-menu-icon-width) + var(--el-menu-base-level-padding)* 2);
+.el-menu-vertical-collapse {
+  $layout-container-left-width: calc(
+    var(--el-menu-icon-width) + var(--el-menu-base-level-padding) * 2
+  );
 }
-
- 
 </style>

@@ -18,9 +18,9 @@ const routes = [
         component: () => import('@/views/tagManage/index.vue'),
       },
       {
-        path: "/systemSetting",
-        component:()=>import("@/views/systemSetting/index.vue")
-      }
+        path: '/systemSetting',
+        component: () => import('@/views/systemSetting/index.vue'),
+      },
     ],
   },
 ]

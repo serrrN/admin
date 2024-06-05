@@ -21,7 +21,7 @@
     </div>
 
     <el-menu-item index="home">
-      <el-icon><House  /></el-icon>
+      <el-icon><House /></el-icon>
       <span>控制台</span>
     </el-menu-item>
     <el-menu-item index="2">
@@ -94,7 +94,7 @@ const handleClose = (key: string, keyPath: string[]) => {
   }
 }
 .el-menu-vertical-demo:not(.el-menu--collapse) {
-  width:100%;
-  min-height:100%;
+  width: 100%;
+  min-height: 100%;
 }
 </style>

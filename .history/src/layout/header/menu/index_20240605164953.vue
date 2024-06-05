@@ -14,7 +14,7 @@
   align-items: center;
   cursor: pointer;
   position: relative;
- 
+
   transition: all linear 0.3s;
   &::before {
     content: '';

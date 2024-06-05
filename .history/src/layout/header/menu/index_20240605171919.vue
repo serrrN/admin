@@ -6,14 +6,14 @@
 .header-menu {
   width: 240px;
   height: 60px;
-  
+
   background-image: linear-gradient(
-      90deg,
-      #00c0ff 0%,
-      #ffcf00 49%,
-      #fc4f4f 80%,
-      #00c0ff 100%
-    );
+    90deg,
+    #00c0ff 0%,
+    #ffcf00 49%,
+    #fc4f4f 80%,
+    #00c0ff 100%
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,7 +42,4 @@
     opacity: 1; /* 悬停时显示 */
   }
 }
-
-
-
 </style>

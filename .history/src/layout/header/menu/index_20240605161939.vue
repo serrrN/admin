@@ -13,12 +13,22 @@
   margin-right: 10px;
   cursor: pointer;
   position: relative;
-  .border{
-    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      z-index: 5;
+  .border {
+    background: linear-gradient(
+      45deg,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      indigo,
+      violet,
+      red
+    );
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 5;
   }
 }
 </style>

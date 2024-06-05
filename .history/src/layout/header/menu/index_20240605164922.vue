@@ -5,9 +5,9 @@
 <style lang="scss" scoped>
 .header-menu {
   width: calc(240px);
-    height: calc(60px);
-    background-color: white;
- 
+  height: calc(60px);
+  background-color: white;
+
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -19,20 +19,20 @@
   &::before {
     content: '';
     width: calc(240px + 6px);
-  height: calc(60px + 6px);
-  background-image: linear-gradient(
-    90deg,
-    #00c0ff 0%,
-    #ffcf00 49%,
-    #fc4f4f 80%,
-    #00c0ff 100%
-  );
+    height: calc(60px + 6px);
+    background-image: linear-gradient(
+      90deg,
+      #00c0ff 0%,
+      #ffcf00 49%,
+      #fc4f4f 80%,
+      #00c0ff 100%
+    );
     display: flex;
     align-items: center;
     justify-content: center;
   }
 }
-.header-menu:hover:hover{
+.header-menu:hover:hover {
   visibility: visible;
 }
 </style>

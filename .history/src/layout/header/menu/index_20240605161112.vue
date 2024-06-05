@@ -11,7 +11,7 @@
   align-items: center;
   margin-right: 10px;
   cursor: pointer;
-  .el-card{
+  .el-card {
     background-color: purple;
   }
 }

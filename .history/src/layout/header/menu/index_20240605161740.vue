@@ -11,11 +11,21 @@
   align-items: center;
   margin-right: 10px;
   cursor: pointer;
-  :deep(.el-card){
+  :deep(.el-card) {
     position: relative;
-    ::before{
-      content: "";
-      background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
+    ::before {
+      content: '';
+      background: linear-gradient(
+        45deg,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet,
+        red
+      );
       width: 100%;
       height: 100%;
       display: block;

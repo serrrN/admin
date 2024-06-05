@@ -5,7 +5,7 @@
     </div>
     <div class="right">
       <div class="header"><Header /></div>
-      <div class="main"><Main/></div>
+      <div class="main"><Main /></div>
     </div>
   </div>
 </template>
@@ -35,10 +35,9 @@ import Main from './main/index.vue'
     }
     .main {
       height: calc(100% - $layout-container-header-height);
-      width: calc(100%  );
+      width: calc(100%);
       background-color: #f3f3f3;
     }
   }
-  
 }
 </style>

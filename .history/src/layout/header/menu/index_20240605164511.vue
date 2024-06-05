@@ -28,11 +28,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-   
   }
- 
 }
-.header-menu:hover{
+.header-menu:hover {
   visibility: hidden;
-  }
+}
 </style>

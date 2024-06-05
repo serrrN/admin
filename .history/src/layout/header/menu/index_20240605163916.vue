@@ -31,8 +31,8 @@
     z-index: -5;
     position: absolute;
   }
-  &:hover{
-    &::after{
+  &:hover {
+    &::after {
       visibility: visible;
     }
   }

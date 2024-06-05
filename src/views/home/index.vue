@@ -1,9 +1,3 @@
-<template>
-home
-</template>
-<script setup lang="ts">
-
-</script>
-<style lang="scss" scoped>
-
-</style>
+<template>home</template>
+<script setup lang="ts"></script>
+<style lang="scss" scoped></style>

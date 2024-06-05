@@ -27,17 +27,18 @@
     );
     width: 100%;
     height: 100%;
-    border: 1px solid  linear-gradient(
-      45deg,
-      red,
-      orange,
-      yellow,
-      green,
-      blue,
-      indigo,
-      violet,
-      red
-    );
+    border: 1px solid
+      linear-gradient(
+        45deg,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet,
+        red
+      );
     position: absolute;
     z-index: 1;
   }

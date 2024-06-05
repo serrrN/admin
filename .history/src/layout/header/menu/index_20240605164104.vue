@@ -29,8 +29,8 @@
     justify-content: center;
     visibility: hidden;
   }
-  .header-menu:hover{
-    &::before{
+  .header-menu:hover {
+    &::before {
       visibility: visible;
     }
   }

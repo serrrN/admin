@@ -19,14 +19,14 @@
   margin-right: 10px;
   cursor: pointer;
   position: relative;
-  ::after{
-    content:attr(alt);
-  width:20vw;
-  height:8vw;
-  background-color:#191919;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  ::after {
+    content: attr(alt);
+    width: 20vw;
+    height: 8vw;
+    background-color: #191919;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 </style>

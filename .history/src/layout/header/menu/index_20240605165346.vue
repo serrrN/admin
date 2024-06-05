@@ -30,11 +30,10 @@
     align-items: center;
     justify-content: center;
     visibility: hidden;
-    
   }
 }
 .header-menu:hover {
-  &::before{
+  &::before {
     visibility: visible;
   }
 }

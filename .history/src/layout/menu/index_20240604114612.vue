@@ -21,7 +21,7 @@
     </div>
 
     <el-menu-item index="home">
-      <el-icon><House  /></el-icon>
+      <el-icon><House /></el-icon>
       <template #title>控制台</template>
     </el-menu-item>
     <el-menu-item index="2">
@@ -40,7 +40,7 @@
 </template>
 
 <script lang="ts" setup>
-import { Setting } from '@element-plus/icons-vue/dist/types';
+import { Setting } from '@element-plus/icons-vue/dist/types'
 import { ref } from 'vue'
 
 const isCollapse = ref(false)
@@ -95,7 +95,7 @@ const handleClose = (key: string, keyPath: string[]) => {
   }
 }
 .el-menu-vertical-demo:not(.el-menu--collapse) {
-  width:100%;
-  min-height:100%;
+  width: 100%;
+  min-height: 100%;
 }
 </style>

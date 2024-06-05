@@ -19,8 +19,7 @@
   margin-right: 10px;
   cursor: pointer;
   position: relative;
-  ::after{
-    
+  ::after {
   }
 }
 </style>

@@ -31,7 +31,7 @@
     justify-content: center;
   }
 }
-.header-menu::before:hover  .header-menu{
+.header-menu::before:hover .header-menu {
   visibility: visible;
 }
 </style>

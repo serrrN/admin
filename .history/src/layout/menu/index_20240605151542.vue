@@ -17,7 +17,7 @@
       </div>
       <div class="fold-icon-wrapped" @click="handleCollapse">
         <el-icon size="18" color="rgb(64, 158, 255)">
-          <component :is="isCollapse?'Expand':'Fold'"></component>
+          <component :is="isCollapse ? 'Expand' : 'Fold'"></component>
         </el-icon>
       </div>
     </div>

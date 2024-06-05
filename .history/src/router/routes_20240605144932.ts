@@ -18,9 +18,9 @@ const routes = [
         component: () => import('@/views/knowledgeManage/index.vue'),
       },
       {
-        path: "/systemSetting",
-        component:()=>import("@/view")
-      }
+        path: '/systemSetting',
+        component: () => import('@/view'),
+      },
     ],
   },
 ]

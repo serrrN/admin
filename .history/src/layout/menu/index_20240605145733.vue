@@ -21,7 +21,7 @@
     </div>
 
     <el-menu-item index="home">
-      <el-icon><House  /></el-icon>
+      <el-icon><House /></el-icon>
       <template #title>首页</template>
     </el-menu-item>
     <el-menu-item index="knowledgeManage">
@@ -98,7 +98,7 @@ const handleCollapse = () => {
   }
 }
 .el-menu-vertical-demo:not(.el-menu--collapse) {
-  width:100%;
-  min-height:100%;
+  width: 100%;
+  min-height: 100%;
 }
 </style>

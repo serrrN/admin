@@ -1,8 +1,8 @@
 <template>
   <div class="header-menu">
     <el-avatar
-        src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png"
-      />
+      src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png"
+    />
   </div>
 </template>
 <script setup lang="ts"></script>
@@ -10,7 +10,13 @@
 .header-menu {
   width: calc(20vw);
   height: calc(4vw);
-  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  background-image: linear-gradient(
+    90deg,
+    #00c0ff 0%,
+    #ffcf00 49%,
+    #fc4f4f 80%,
+    #00c0ff 100%
+  );
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -47,8 +53,4 @@
     background-position: 20vw;
   }
 }
-
-
-
-
 </style>

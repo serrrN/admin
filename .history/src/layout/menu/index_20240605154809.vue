@@ -1,7 +1,7 @@
 <template>
   <el-menu
     default-active="home"
-    :class="isCollapse?'el-menu-vertical-collapse':'el-menu-vertical'"
+    :class="isCollapse ? 'el-menu-vertical-collapse' : 'el-menu-vertical'"
     :collapse="isCollapse"
     :router="true"
     collapse-transition
@@ -17,7 +17,7 @@
       </div>
       <div class="fold-icon-wrapped" @click="handleCollapse">
         <el-icon size="18" color="rgb(64, 158, 255)">
-          <component :is="isCollapse?'Expand':'Fold'"></component>
+          <component :is="isCollapse ? 'Expand' : 'Fold'"></component>
         </el-icon>
       </div>
     </div>
@@ -42,7 +42,7 @@
 </template>
 
 <script lang="ts" setup>
-import {useSystemStore} from "@/store/modules/system"
+import { useSystemStore } from '@/store/modules/system'
 const systemStore = useSystemStore()
 let isCollapse = systemStore.isCollapse
 const handleOpen = (key: string, keyPath: string[]) => {
@@ -53,7 +53,6 @@ const handleClose = (key: string, keyPath: string[]) => {
 }
 const handleCollapse = () => {
   isCollapse = !isCollapse
-   
 }
 </script>
 
@@ -116,6 +115,4 @@ const handleCollapse = () => {
   min-height: 100%;
   min-width: 20%;
 }
- 
- 
 </style>

@@ -6,10 +6,10 @@ const routes = [
     component: () => import('@/layout/index.vue'),
     children: [
       {
-        path: "/home",
+        path: '/home',
         component: () => import('@/views/home/index.vue'),
-      }
-    ]
+      },
+    ],
   },
 ]
 const router = createRouter({

@@ -28,10 +28,9 @@
     align-items: center;
     justify-content: center;
     visibility: hidden;
-     
   }
-  &:hover{
-    &::after{
+  &:hover {
+    &::after {
       visibility: visible;
     }
   }

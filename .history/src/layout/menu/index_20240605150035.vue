@@ -11,9 +11,9 @@
     <div class="header">
       <div class="manage-msg">
         <div class="logo-wrapped">
-        <img src="/vite.svg" class="logo" alt="Vite logo" />
-      </div>
-      <div class="name">后台管理系统</div>
+          <img src="/vite.svg" class="logo" alt="Vite logo" />
+        </div>
+        <div class="name">后台管理系统</div>
       </div>
       <div class="fold-icon-wrapped" @click="handleCollapse">
         <el-icon size="18" color="rgb(64, 158, 255)">
@@ -23,7 +23,7 @@
     </div>
 
     <el-menu-item index="home">
-      <el-icon><House  /></el-icon>
+      <el-icon><House /></el-icon>
       <template #title>首页</template>
     </el-menu-item>
     <el-menu-item index="knowledgeManage">
@@ -101,8 +101,8 @@ const handleCollapse = () => {
   }
 }
 .el-menu-vertical-demo:not(.el-menu--collapse) {
-  width:100%;
-  min-height:100%;
+  width: 100%;
+  min-height: 100%;
   min-width: 20%;
 }
 </style>

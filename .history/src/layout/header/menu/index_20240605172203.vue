@@ -32,15 +32,11 @@
     top: -5px; /* 向上移动5px */
     left: -5px; /* 向左移动5px */
     z-index: -1; /* 低于.header-menu的z-index */
-     /* 默认隐藏 */
+    /* 默认隐藏 */
   }
 
   &:hover::before {
-      /* 悬停时显示 */
+    /* 悬停时显示 */
   }
 }
-
-
-
-
 </style>

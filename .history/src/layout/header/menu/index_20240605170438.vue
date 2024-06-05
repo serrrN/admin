@@ -34,12 +34,12 @@
     visibility: hidden;
     position: absolute;
     z-index: -1;
-    top:0;
+    top: 0;
     left: 0;
   }
 }
 .header-menu:hover {
-  &::before{
+  &::before {
     visibility: visible;
   }
 }

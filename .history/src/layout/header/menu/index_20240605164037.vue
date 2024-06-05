@@ -29,8 +29,8 @@
     justify-content: center;
     visibility: hidden;
   }
-  &:hover{
-    &::before{
+  &:hover {
+    &::before {
       visibility: visible;
     }
   }

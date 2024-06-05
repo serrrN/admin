@@ -5,7 +5,7 @@
 </template>
 <script setup lang="ts"></script>
 <style lang="scss" scoped>
-.header-menu{
+.header-menu {
   display: flex;
   justify-content: center;
   align-items: center;

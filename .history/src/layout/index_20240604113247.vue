@@ -5,7 +5,7 @@
     </div>
     <div class="right">
       <div class="header"><Header /></div>
-      <div class="main"><Main/></div>
+      <div class="main"><Main /></div>
     </div>
   </div>
 </template>

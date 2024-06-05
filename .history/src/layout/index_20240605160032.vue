@@ -1,11 +1,11 @@
 <template>
   <div class="layout-container">
-    <div :class="systemStore.isCollapse?'left left-collapse':'left'" >
+    <div :class="systemStore.isCollapse ? 'left left-collapse' : 'left'">
       <Menu />
     </div>
-    <div :class="systemStore.isCollapse?'right right-collapse':'right'">
+    <div :class="systemStore.isCollapse ? 'right right-collapse' : 'right'">
       <div class="header"><Header /></div>
-      <div class="main"><Main/></div>
+      <div class="main"><Main /></div>
     </div>
   </div>
 </template>
@@ -15,7 +15,7 @@ import Menu from './menu/index.vue'
 import Header from './header/index.vue'
 import Main from './main/index.vue'
 
-import {useSystemStore} from "@/store/modules/system"
+import { useSystemStore } from '@/store/modules/system'
 const systemStore = useSystemStore()
 </script>
 
@@ -29,8 +29,8 @@ const systemStore = useSystemStore()
     width: $layout-container-left-max-width;
     transition: all linear 0.5s;
   }
-  .left-collapse{
-    width:$layout-container-left-min-width;
+  .left-collapse {
+    width: $layout-container-left-min-width;
   }
   .right {
     width: calc(100% - $layout-container-left-max-width);
@@ -47,9 +47,8 @@ const systemStore = useSystemStore()
       background-color: #f3f3f3;
     }
   }
-  .right-collapse{
-    width:calc(100% - $layout-container-left-min-width);
+  .right-collapse {
+    width: calc(100% - $layout-container-left-min-width);
   }
-  
 }
 </style>

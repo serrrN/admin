@@ -30,8 +30,8 @@
     visibility: hidden;
     position: absolute;
   }
-  &:hover{
-    &::after{
+  &:hover {
+    &::after {
       visibility: visible;
     }
   }

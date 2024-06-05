@@ -30,11 +30,10 @@
     visibility: visible;
     z-index: -1;
   }
- 
 }
-.header-menu:hover{
-    &::before{
-      visibility: hidden;
-    }
+.header-menu:hover {
+  &::before {
+    visibility: hidden;
   }
+}
 </style>

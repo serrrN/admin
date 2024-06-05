@@ -12,8 +12,14 @@
   margin-right: 10px;
   cursor: pointer;
   position: relative;
-   .el-card{
-    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
-   }
+  .el-card {
+    background-image: linear-gradient(
+      90deg,
+      #00c0ff 0%,
+      #ffcf00 49%,
+      #fc4f4f 80%,
+      #00c0ff 100%
+    );
+  }
 }
 </style>

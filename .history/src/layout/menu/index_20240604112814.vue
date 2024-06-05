@@ -21,7 +21,7 @@
     </div>
 
     <el-menu-item index="1">
-      <el-icon><House  /></el-icon>
+      <el-icon><House /></el-icon>
       <span>控制台</span>
     </el-menu-item>
     <el-menu-item index="2">

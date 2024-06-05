@@ -29,11 +29,10 @@
     justify-content: center;
     visibility: hidden;
   }
- 
 }
-.header-menu:hover{
-    &::before{
-      visibility: visible;
-    }
+.header-menu:hover {
+  &::before {
+    visibility: visible;
   }
+}
 </style>

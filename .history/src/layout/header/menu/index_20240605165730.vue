@@ -33,7 +33,7 @@
   }
 }
 .header-menu:hover {
-  &::before{
+  &::before {
     visibility: visible;
   }
 }

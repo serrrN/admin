@@ -1,13 +1,11 @@
 <template>
   <div class="header-menu">
-    <el-card style="width: 240px">
-   
-  </el-card>
+    <el-card style="width: 240px"></el-card>
   </div>
 </template>
 <script setup lang="ts"></script>
 <style lang="scss" scoped>
-.header-menu{
+.header-menu {
   display: flex;
   justify-content: center;
   align-items: center;

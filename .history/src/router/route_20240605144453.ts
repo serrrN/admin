@@ -8,11 +8,11 @@ const routes = [
       {
         path: '/home',
         component: () => import('@/views/home/index.vue'),
-        },
-        {
-            path: "/tagManage",
-            component:()=>import("@/views/tagManage")
-        }
+      },
+      {
+        path: '/tagManage',
+        component: () => import('@/views/tagManage'),
+      },
     ],
   },
 ]
