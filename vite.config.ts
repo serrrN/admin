@@ -28,7 +28,6 @@ export default defineConfig(({ command, mode }) => {
       }),
     ],
     server: {
-      host: '0.0.0.0', //ip地址
       port: 80, // 设置服务启动端口号
       open: true, // 设置服务启动时是否自动打开浏览器
       proxy: {
@@ -37,8 +36,8 @@ export default defineConfig(({ command, mode }) => {
           target: env.VITE_SERVE,
           //需要代理跨域
           changeOrigin: true,
-          //路径重写
-          rewrite: (path) => path.replace(/^\/api\/v1/, ''),
+          // //路径重写
+          // rewrite: (path) => path.replace(/^\/api\/v1/, ''),
         },
       },
     },

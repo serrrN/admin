@@ -2,8 +2,8 @@
 export interface ResponseData {
   message: string
   code: number
+  _v: number
 }
-//标签数据类型定义
 
 //知识数据类型定义
 export interface Knowledge {
@@ -12,4 +12,11 @@ export interface Knowledge {
   answer: string
   tags: string[]
   createdTime: string
+  updateTime: string
+}
+
+export type KnowledgeList = Knowledge[]
+
+export interface KnowledgeResponseData extends ResponseData {
+  results: KnowledgeList
 }

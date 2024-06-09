@@ -22,9 +22,28 @@
     <!-- 展示知识的表格 -->
     <div class="table-content">
       <el-table :data="tableData" style="width: 100%" border>
-        <el-table-column prop="date" label="Date" width="180" />
-        <el-table-column prop="name" label="Name" width="180" />
-        <el-table-column prop="address" label="Address" />
+        <el-table-column prop="_id" label="编号" width="180" />
+        <el-table-column prop="question" label="问题" width="180" />
+        <el-table-column prop="answer" label="答案" />
+        <el-table-column prop="tags" label="标签" width="180">
+          <template #="{ row, $index }">
+            <div class="tagsWrapped">
+              <el-tag v-for="(tagName, index) in row.tags" :key="index">
+                {{ tagName }}
+              </el-tag>
+            </div>
+          </template>
+        </el-table-column>
+        <el-table-column prop="createTime" label="创建时间" />
+        <el-table-column prop="updateTime" label="上次修改时间" />
+        <el-table-column prop="address" label="操作">
+          <template #default="scope">
+            <el-button type="primary" @click="change(scope?._id)">
+              修改
+            </el-button>
+            <el-button type="danger">删除</el-button>
+          </template>
+        </el-table-column>
       </el-table>
       <el-pagination
         :page-sizes="[100, 200, 300, 400]"
@@ -35,28 +54,26 @@
   </el-card>
 </template>
 <script setup lang="ts">
-const tableData = [
-  {
-    date: '2016-05-03',
-    name: 'Tom',
-    address: 'No. 189, Grove St, Los Angeles',
-  },
-  {
-    date: '2016-05-02',
-    name: 'Tom',
-    address: 'No. 189, Grove St, Los Angeles',
-  },
-  {
-    date: '2016-05-04',
-    name: 'Tom',
-    address: 'No. 189, Grove St, Los Angeles',
-  },
-  {
-    date: '2016-05-01',
-    name: 'Tom',
-    address: 'No. 189, Grove St, Los Angeles',
-  },
-]
+import { ref, onMounted } from 'vue'
+import { getAllKnowledge } from '@/api/knowledgeManage'
+import type {
+  KnowledgeResponseData,
+  KnowledgeList,
+} from '@/api/knowledgeManage/type'
+onMounted(() => {
+  getTableData()
+})
+const getTableData = async () => {
+  const res: KnowledgeResponseData = await getAllKnowledge()
+  tableData.value = res.results
+}
+const tableData = ref<KnowledgeList>([])
+const change = (_id: string) => {
+  console.log(_id)
+}
+const check = (msg) => {
+  console.log(msg)
+}
 </script>
 <style lang="scss" scoped>
 .knowledge-card {
@@ -76,6 +93,12 @@ const tableData = [
   }
   .table-content {
     padding-top: 10px;
+    .el-table {
+      margin-bottom: 10px;
+      .tagsWrapped {
+        display: flex;
+      }
+    }
   }
 }
 </style>
