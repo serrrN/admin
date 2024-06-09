@@ -81,7 +81,6 @@
       height: calc(3vw + 5px);
       background-size: 200%;
     }
-    
   }
 }
 @keyframes slidebg {

@@ -78,7 +78,6 @@
     &:after:hover {
       animation: slidebg 3s linear infinite;
       transform: scale(1.1);
-     
     }
   }
 }

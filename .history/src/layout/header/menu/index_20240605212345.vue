@@ -80,7 +80,7 @@
       width: calc(9vw + 5px);
       height: calc(3vw + 5px);
     }
-    &:hover{
+    &:hover {
       transform: scale(1.1);
     }
   }

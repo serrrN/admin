@@ -29,14 +29,13 @@ const systemStore = useSystemStore()
     height: 100%;
     width: $layout-container-left-max-width;
     transition: all linear 0.5s;
-
   }
   .left-collapse {
     width: $layout-container-left-min-width;
   }
   .right {
     width: calc(100% - $layout-container-left-max-width);
-    
+
     .header {
       width: 100%;
       height: $layout-container-header-height;

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { watch } from "vue"
-import {router} from "vue-router"
+import { watch } from 'vue'
+import { router } from 'vue-router'
 watch(router)
 </script>
 

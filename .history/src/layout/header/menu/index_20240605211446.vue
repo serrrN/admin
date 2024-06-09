@@ -73,7 +73,7 @@
       z-index: -1;
       position: absolute;
       top: 2px;
-      left:2px;
+      left: 2px;
       right: 2px;
       bottom: 2px;
     }

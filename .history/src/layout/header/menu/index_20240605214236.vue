@@ -80,7 +80,6 @@
       width: calc(9vw + 5px);
       height: calc(2vw + 5px);
     }
-    
   }
 }
 @keyframes slidebg {

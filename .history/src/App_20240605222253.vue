@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { watch } from "vue"
-import { useRoute } from "vue-router"
-import routes from "@/router/routes"
-import {useSystemStore} from "@/store/modules/system"
+import { watch } from 'vue'
+import { useRoute } from 'vue-router'
+import routes from '@/router/routes'
+import { useSystemStore } from '@/store/modules/system'
 const systemStore = useSystemStore()
 const route = useRoute()
 watch(route, (i) => {
-  console.log(i.fullPath,routes)
+  console.log(i.fullPath, routes)
 })
 </script>
 

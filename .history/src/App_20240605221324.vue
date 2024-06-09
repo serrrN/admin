@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { watch } from "vue"
-import {useRoute} from "vue-router"
+import { watch } from 'vue'
+import { useRoute } from 'vue-router'
 watch(useRoute, (i) => {
   console.log(i)
 })

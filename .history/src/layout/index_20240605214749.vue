@@ -29,7 +29,6 @@ const systemStore = useSystemStore()
 
   .left {
     height: 100%;
-
   }
   .left-collapse {
   }
@@ -46,7 +45,6 @@ const systemStore = useSystemStore()
     }
   }
   .right-collapse {
-
   }
 }
 </style>

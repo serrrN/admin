@@ -3,5 +3,5 @@ import { ref } from 'vue'
 export const useSystemStore = defineStore('system', () => {
   const isCollapse = ref(false)
   const tabs = ref([])
-  return { isCollapse,tabs }
+  return { isCollapse, tabs }
 })

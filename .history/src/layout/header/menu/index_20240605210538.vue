@@ -5,9 +5,7 @@
       <div class="header-menu-item">
         <el-icon size="20"><Message /></el-icon>
       </div>
-      <div class="header-menu-item">
-
-      </div>
+      <div class="header-menu-item"></div>
     </div>
     <!-- 用户信息 -->
     <div class="userMsg">
@@ -24,8 +22,8 @@
   display: flex;
   align-items: center;
   //菜单操作
-  .handle{
-    .message-receive{
+  .handle {
+    .message-receive {
       background-color: #f5f5f5;
     }
   }

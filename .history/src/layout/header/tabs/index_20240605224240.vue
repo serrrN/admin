@@ -9,7 +9,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import {ref} from "vue"
+import { ref } from 'vue'
 const editableTabsValue = ref('2')
 </script>
 <style lang="scss" scoped></style>

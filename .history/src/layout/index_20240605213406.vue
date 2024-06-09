@@ -34,7 +34,7 @@ const systemStore = useSystemStore()
   }
   .right {
     width: calc(100% - $layout-container-left-max-width);
-    
+
     .header {
       width: 100%;
       height: $layout-container-header-height;

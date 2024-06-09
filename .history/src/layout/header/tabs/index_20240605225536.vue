@@ -1,19 +1,13 @@
 <template>
   <div class="header-tabs">
-    <el-tabs
-    v-model="editableTabsValue"
-    type="card"
-    editable
-    class="demo-tabs"
-  >
-    <el-tab-pane
-      v-for="item in editableTabs"
-      :key="item.name"
-      :label="item.title"
-      :name="item.name"
-    >
-    </el-tab-pane>
-  </el-tabs>
+    <el-tabs v-model="editableTabsValue" type="card" editable class="demo-tabs">
+      <el-tab-pane
+        v-for="item in editableTabs"
+        :key="item.name"
+        :label="item.title"
+        :name="item.name"
+      ></el-tab-pane>
+    </el-tabs>
   </div>
 </template>
 <script setup lang="ts">
@@ -33,11 +27,11 @@ const editableTabs = ref([
 ])
 </script>
 <style lang="scss" scoped>
-.header-tabs{
+.header-tabs {
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  .el-tabs__header{
+  .el-tabs__header {
     margin: 0;
     margin-left: 5px;
   }

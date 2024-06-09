@@ -49,10 +49,8 @@
 import { useSystemStore } from '@/store/modules/system'
 const systemStore = useSystemStore()
 
-const handleOpen = (key: string, keyPath: string[]) => {
-}
-const handleClose = (key: string, keyPath: string[]) => {
-}
+const handleOpen = (key: string, keyPath: string[]) => {}
+const handleClose = (key: string, keyPath: string[]) => {}
 const handleCollapse = () => {
   systemStore.isCollapse = !systemStore.isCollapse
 }

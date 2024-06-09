@@ -1,6 +1,3 @@
-
 export default function useTabsChangeHook() {
-    return {
-        
-    }
+  return {}
 }

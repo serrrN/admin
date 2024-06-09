@@ -25,18 +25,15 @@ const systemStore = useSystemStore()
   height: 100%;
   display: flex;
   background-color: #f3f3f3;
-  
 
   .left {
     height: 100%;
     width: $layout-container-left-max-width;
-
   }
   .left-collapse {
     width: $layout-container-left-min-width;
   }
   .right {
-   
     .header {
       width: 100%;
       height: $layout-container-header-height;
@@ -50,7 +47,6 @@ const systemStore = useSystemStore()
     }
   }
   .right-collapse {
-    
   }
 }
 </style>

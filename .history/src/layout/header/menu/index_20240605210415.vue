@@ -21,8 +21,8 @@
   display: flex;
   align-items: center;
   //菜单操作
-  .handle{
-    .message-receive{
+  .handle {
+    .message-receive {
       background-color: #f5f5f5;
     }
   }

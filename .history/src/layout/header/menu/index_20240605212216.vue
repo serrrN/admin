@@ -77,9 +77,8 @@
     }
     &:hover {
       animation: slidebg 3s linear infinite;
-      
     }
-    &::after:hover{
+    &::after:hover {
       transform: scale(2);
     }
   }

@@ -30,7 +30,6 @@ const systemStore = useSystemStore()
   .left {
     height: 100%;
     width: $layout-container-left-max-width;
-
   }
   .left-collapse {
     width: $layout-container-left-min-width;
@@ -51,7 +50,6 @@ const systemStore = useSystemStore()
   }
   .right-collapse {
     width: calc(100% - $layout-container-left-min-width);
-
   }
 }
 </style>

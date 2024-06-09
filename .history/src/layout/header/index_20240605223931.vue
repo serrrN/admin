@@ -1,6 +1,6 @@
 <template>
-  <Tabs/>
-  <Menu/>
+  <Tabs />
+  <Menu />
 </template>
 <script setup lang="ts">
 import Tabs from './tabs/index.vue'

@@ -21,9 +21,9 @@
   display: flex;
   align-items: center;
   //菜单操作
-  .handle{
-    .message-receive{
-      background-color: ;
+  .handle {
+    .message-receive {
+      background-color:;
     }
   }
   //用户信息

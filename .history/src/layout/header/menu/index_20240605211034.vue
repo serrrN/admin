@@ -26,11 +26,11 @@
   justify-content: flex-end;
   width: 30%;
   //菜单操作
-  .handle{
+  .handle {
     width: 10vw;
     display: flex;
     justify-content: space-evenly;
-    .handle-item{
+    .handle-item {
       background-color: #f5f5f5;
     }
   }

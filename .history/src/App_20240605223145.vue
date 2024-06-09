@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import { watch } from "vue"
-import { useRoute } from "vue-router"
-import type {RouteLocationNormalizedLoaded} from "vue-router"
-import routes from "@/router/routes"
-import {useSystemStore} from "@/store/modules/system"
+import { watch } from 'vue'
+import { useRoute } from 'vue-router'
+import type { RouteLocationNormalizedLoaded } from 'vue-router'
+import routes from '@/router/routes'
+import { useSystemStore } from '@/store/modules/system'
 const systemStore = useSystemStore()
 const route = useRoute()
-watch(route, (item:RouteLocationNormalizedLoaded) => {
+watch(route, (item: RouteLocationNormalizedLoaded) => {
   systemStore.tabs.push(item.fullPath)
-  console.log(item.fullPath,routes)
+  console.log(item.fullPath, routes)
 })
 </script>
 
