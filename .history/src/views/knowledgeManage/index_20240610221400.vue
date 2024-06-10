@@ -155,7 +155,7 @@ const openAddDialog = () => {
   Object.assign(knowledgeData.value, {
     question: '',
     answer: '',
-    tags: ''
+    tags: '',
   })
 }
 //添加知识

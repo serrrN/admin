@@ -58,24 +58,32 @@
   <el-dialog v-model="dialogVisible" title="添加知识点" width="500">
     <el-form :data="knowledgeData">
       <el-form-item label="问题:" props="question">
-        <el-input placeholder="请输入问题" v-model="knowledgeData.question"></el-input>
+        <el-input
+          placeholder="请输入问题"
+          v-model="knowledgeData.question"
+        ></el-input>
       </el-form-item>
       <el-form-item label="答案:" props="answer">
-        <el-input placeholder="请输入答案" v-model="knowledgeData.answer"></el-input>
+        <el-input
+          placeholder="请输入答案"
+          v-model="knowledgeData.answer"
+        ></el-input>
       </el-form-item>
       <el-form-item label="标签:" props="tags">
         <div style="display: flex">
-          <el-input placeholder="请输入标签,多个以空格分隔" style="width:280px ;" v-model="knowledgeData.tags"></el-input>
+          <el-input
+            placeholder="请输入标签,多个以空格分隔"
+            style="width: 280px"
+            v-model="knowledgeData.tags"
+          ></el-input>
           <el-button
-            :type="chooseTagDialogVisible?'':'primary'"
+            :type="chooseTagDialogVisible ? '' : 'primary'"
             @click="chooseTag"
             style="margin-left: 15px"
           >
-            {{chooseTagDialogVisible?"收起":"选择已有的标签"}}
+            {{ chooseTagDialogVisible ? '收起' : '选择已有的标签' }}
           </el-button>
         </div>
-
-      
       </el-form-item>
       <div
         style="display: flex; flex-direction: column"
@@ -104,8 +112,6 @@
       </div>
     </template>
   </el-dialog>
-
-  
 </template>
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
@@ -116,7 +122,7 @@ import type {
   ResponseData,
   Knowledge,
 } from '@/api/knowledgeManage/type'
-import { ElMessage } from 'element-plus';
+import { ElMessage } from 'element-plus'
 onMounted(() => {
   getTableData()
 })
@@ -138,20 +144,20 @@ const chooseTagDialogVisible = ref(false)
 const knowledgeData = ref<Knowledge>({
   question: '',
   answer: '',
-  tags: "",
+  tags: '',
 })
 const addKnowledgeData = async () => {
   dialogVisible.value = false
   const data = {
     ...knowledgeData.value,
-    tags:(knowledgeData.value.tags as string).split(" ")
+    tags: (knowledgeData.value.tags as string).split(' '),
   }
   const res: ResponseData = await addKnowledge(data)
   if (res.code === 1) {
-    ElMessage.success("添加成功")
+    ElMessage.success('添加成功')
     getTableData()
   } else {
-    ElMessage.error("添加失败")
+    ElMessage.error('添加失败')
   }
 }
 const value = ref('')

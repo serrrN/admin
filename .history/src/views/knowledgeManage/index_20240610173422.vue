@@ -63,7 +63,7 @@
       <el-form-item label="答案:" props="answer">
         <el-input placeholder="请输入答案"></el-input>
       </el-form-item>
-      <el-form-item label="标签:" props="tags" style="flex-wrap: nowrap;">
+      <el-form-item label="标签:" props="tags" style="flex-wrap: nowrap">
         <el-input placeholder="请输入标签,以空格、逗号、竖线,分割"></el-input>
         <el-button type="primary" @click="chooseTag" style="margin-left: 10px">
           选择已有的标签
@@ -79,8 +79,13 @@
         </el-select>
         <el-button icon="Plus" /> -->
       </el-form-item>
-      <div style="display: flex; flex-direction: column" v-show="chooseTagDialogVisible">
-        <span style="font-size:18px;line-height:24px ;padding-bottom:5px ;">选择已有的标签</span>
+      <div
+        style="display: flex; flex-direction: column"
+        v-show="chooseTagDialogVisible"
+      >
+        <span style="font-size: 18px; line-height: 24px; padding-bottom: 5px">
+          选择已有的标签
+        </span>
         <div>
           <el-select v-model="value" placeholder="Select" style="width: 240px">
             <el-option

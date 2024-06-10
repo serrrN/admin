@@ -63,9 +63,11 @@
       <el-form-item label="答案:" props="answer">
         <el-input placeholder="请输入答案"></el-input>
       </el-form-item>
-      <el-form-item label="标签:" props="tags" style="flex-wrap:nowrap">
+      <el-form-item label="标签:" props="tags" style="flex-wrap: nowrap">
         <el-input placeholder="请输入标签,以|或,分割"></el-input>
-        <el-button type="primary" @click="chooseTag" style="padding-left:10px ;">点击选择标签</el-button>
+        <el-button type="primary" @click="chooseTag" style="padding-left: 10px">
+          点击选择标签
+        </el-button>
         <!-- <el-input placeholder="请输入标签"></el-input>
         <el-select v-model="value" placeholder="Select" style="width: 240px">
           <el-option
@@ -87,12 +89,8 @@
   </el-dialog>
 
   <!-- 选择标签对话框 -->
-  <el-dialog
-    v-model="chooseTagDialogVisible"
-    title="选择标签"
-    width="500"
-  >
-  <template #footer>
+  <el-dialog v-model="chooseTagDialogVisible" title="选择标签" width="500">
+    <template #footer>
       <div class="dialog-footer">
         <el-button @click="chooseTagDialogVisible = false">取消</el-button>
         <el-button type="primary" @click="">确定</el-button>

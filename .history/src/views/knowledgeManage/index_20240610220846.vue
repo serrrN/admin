@@ -204,7 +204,7 @@ const chooseTag = () => {
 //添加已有的标签
 const addTag = () => {
   knowledgeData.value.tags = knowledgeData.value.tags + ' ' + tag.value
-  tag.value = ""
+  tag.value = ''
 }
 </script>
 <style lang="scss" scoped>

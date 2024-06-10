@@ -61,21 +61,22 @@
         <el-input placeholder="请输入问题"></el-input>
       </el-form-item>
       <el-form-item label="答案:" props="answer">
-        <el-input placeholder="请输入答案" ></el-input>
+        <el-input placeholder="请输入答案"></el-input>
       </el-form-item>
       <el-form-item label="标签:" props="tags">
         <div style="display: flex">
-          <el-input placeholder="请输入标签,多个以空格分隔" style="width:280px ;"></el-input>
+          <el-input
+            placeholder="请输入标签,多个以空格分隔"
+            style="width: 280px"
+          ></el-input>
           <el-button
-            :type="chooseTagDialogVisible?'':'primary'"
+            :type="chooseTagDialogVisible ? '' : 'primary'"
             @click="chooseTag"
             style="margin-left: 15px"
           >
-            {{chooseTagDialogVisible?"收起":"选择已有的标签"}}
+            {{ chooseTagDialogVisible ? '收起' : '选择已有的标签' }}
           </el-button>
         </div>
-
-      
       </el-form-item>
       <div
         style="display: flex; flex-direction: column"
@@ -104,8 +105,6 @@
       </div>
     </template>
   </el-dialog>
-
-  
 </template>
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
@@ -137,13 +136,13 @@ const chooseTagDialogVisible = ref(false)
 const knowledgeData = ref<Knowledge>({
   question: '',
   answer: '',
-  tags: "",
+  tags: '',
 })
 const addKnowledgeData = async () => {
   dialogVisible.value = false
   const data = {
     ...knowledgeData.value,
-    tags:(knowledgeData.value.tags as string).split(" ")
+    tags: (knowledgeData.value.tags as string).split(' '),
   }
   const res: ResponseData = await addKnowledge(data)
   console.log(res)

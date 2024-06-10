@@ -17,4 +17,4 @@ app.use(pinia)
 app.use(ElementPlus, { locale: zhCn })
 app.use(router)
 app.mount('#app')
-app.config.globalProperties.day=dayjs//全局挂载
+app.config.globalProperties.day = dayjs //全局挂载

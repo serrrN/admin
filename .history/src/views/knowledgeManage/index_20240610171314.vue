@@ -67,14 +67,14 @@
         <el-input placeholder="请输入标签"></el-input>
       </el-form-item>
       <el-select v-model="value" placeholder="Select" style="width: 240px">
-          <el-option
-            v-for="item in options"
-            :key="item.value"
-            :label="item.label"
-            :value="item.value"
-          ></el-option>
-        </el-select>
-        <el-button icon="Plus" />
+        <el-option
+          v-for="item in options"
+          :key="item.value"
+          :label="item.label"
+          :value="item.value"
+        ></el-option>
+      </el-select>
+      <el-button icon="Plus" />
     </el-form>
     <template #footer>
       <div class="dialog-footer">

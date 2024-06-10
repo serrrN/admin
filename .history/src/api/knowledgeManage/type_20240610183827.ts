@@ -9,11 +9,10 @@ export interface Knowledge {
   _id?: string
   question: string
   answer: string
-  tags: string[]|string
+  tags: string[] | string
   createdTime?: string
   updateTime?: string
   _v?: number
-
 }
 
 export type KnowledgeList = Knowledge[]

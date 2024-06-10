@@ -4,7 +4,7 @@ enum API {
   //获取全部知识
   ALL_KNOWLEDGE_URL = 'knowledge',
   //添加知识
-  ADAD_KNOWLEDGE_URL = ""
+  ADAD_KNOWLEDGE_URL = '',
 }
 //获取全部知识
 export const getAllKnowledge = () => {

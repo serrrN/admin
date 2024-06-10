@@ -4,7 +4,7 @@ enum API {
   //获取全部知识
   ALL_KNOWLEDGE_URL = '/knowledge',
   //添加知识
-  ADD_KNOWLEDGE_URL = "/knowledge/add"
+  ADD_KNOWLEDGE_URL = '/knowledge/add',
 }
 //获取全部知识
 export const getAllKnowledge = () => {
@@ -12,5 +12,5 @@ export const getAllKnowledge = () => {
 }
 //添加知识
 export const addKnowledge = () => {
-  return request.post<any,any>(API.ADD_KNOWLEDGE_URL)
+  return request.post<any, any>(API.ADD_KNOWLEDGE_URL)
 }

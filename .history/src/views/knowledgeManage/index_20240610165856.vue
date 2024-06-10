@@ -55,12 +55,8 @@
   </el-card>
 
   <!-- 对话框 -->
-  <el-dialog
-    v-model="dialogVisible"
-    title="知识点"
-    width="500"
-  >
-     <el-form>
+  <el-dialog v-model="dialogVisible" title="知识点" width="500">
+    <el-form>
       <el-form-item label="问题:">
         <el-input placeholder="请输入问题"></el-input>
       </el-form-item>
@@ -70,7 +66,7 @@
       <el-form-item label="标签:">
         <el-input placeholder="请输入标签"></el-input>
       </el-form-item>
-     </el-form>
+    </el-form>
     <template #footer>
       <div class="dialog-footer">
         <el-button @click="dialogVisible = false">取消</el-button>
@@ -104,8 +100,6 @@ const check = (msg) => {
 }
 
 const dialogVisible = ref(false)
-
- 
 </script>
 <style lang="scss" scoped>
 .knowledge-card {

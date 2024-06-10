@@ -13,7 +13,6 @@ export interface Knowledge {
   createdTime?: string
   updateTime?: string
   _v?: number
-
 }
 
 export type KnowledgeList = Knowledge[]

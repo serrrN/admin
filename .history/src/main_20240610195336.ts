@@ -12,7 +12,7 @@ const app = createApp(App)
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
   app.component(key, component)
 }
-app.config.globalProperties.day=dayjs//全局挂载
+app.config.globalProperties.day = dayjs //全局挂载
 app.use(pinia)
 app.use(ElementPlus, { locale: zhCn })
 app.use(router)

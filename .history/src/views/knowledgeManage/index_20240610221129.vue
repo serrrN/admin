@@ -203,8 +203,9 @@ const chooseTag = () => {
 
 //添加已有的标签
 const addTag = () => {
-  knowledgeData.value.tags = (knowledgeData.value.tags as string).trim() + ' ' + tag.value
-  tag.value = ""
+  knowledgeData.value.tags =
+    (knowledgeData.value.tags as string).trim() + ' ' + tag.value
+  tag.value = ''
 }
 </script>
 <style lang="scss" scoped>

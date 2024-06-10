@@ -79,8 +79,13 @@
         </el-select>
         <el-button icon="Plus" /> -->
       </el-form-item>
-      <div style="display: flex; flex-direction: column" v-show="chooseTagDialogVisible">
-        <span style="font-size:18px;line-height:24px ;padding-bottom:5px ;">选择已有的标签</span>
+      <div
+        style="display: flex; flex-direction: column"
+        v-show="chooseTagDialogVisible"
+      >
+        <span style="font-size: 18px; line-height: 24px; padding-bottom: 5px">
+          选择已有的标签
+        </span>
         <div>
           <el-select v-model="value" placeholder="Select" style="width: 240px">
             <el-option

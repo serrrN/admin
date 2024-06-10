@@ -61,17 +61,20 @@
         <el-input placeholder="请输入问题"></el-input>
       </el-form-item>
       <el-form-item label="答案:" props="answer">
-        <el-input placeholder="请输入答案" ></el-input>
+        <el-input placeholder="请输入答案"></el-input>
       </el-form-item>
       <el-form-item label="标签:" props="tags">
         <div style="display: flex">
-          <el-input placeholder="请输入标签,以空格、逗号、竖线,分割" style="width:280px ;"></el-input>
+          <el-input
+            placeholder="请输入标签,以空格、逗号、竖线,分割"
+            style="width: 280px"
+          ></el-input>
           <el-button
             type="primary"
             @click="chooseTag"
             style="margin-left: 15px"
           >
-            {{chooseTagDialogVisible?"收起":"选择已有的标签"}}
+            {{ chooseTagDialogVisible ? '收起' : '选择已有的标签' }}
           </el-button>
         </div>
 

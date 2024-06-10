@@ -86,12 +86,8 @@
   </el-dialog>
 
   <!-- 选择标签对话框 -->
-  <el-dialog
-    v-model="chooseTagDialogVisible"
-    title="选择标签"
-    width="500"
-  >
-  <template #footer>
+  <el-dialog v-model="chooseTagDialogVisible" title="选择标签" width="500">
+    <template #footer>
       <div class="dialog-footer">
         <el-button @click="chooseTagDialogVisible = false">取消</el-button>
         <el-button type="primary" @click="">确定</el-button>

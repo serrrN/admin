@@ -22,7 +22,12 @@
     <!-- 展示知识的表格 -->
     <div class="table-content">
       <el-table :data="tableData" style="width: 100%" border>
-        <el-table-column prop="_id" label="编号" width="220" style="overflow:scroll ;"/>
+        <el-table-column
+          prop="_id"
+          label="编号"
+          width="220"
+          style="overflow: scroll"
+        />
         <el-table-column prop="question" label="问题" width="180" />
         <el-table-column prop="answer" label="答案" />
         <el-table-column prop="tags" label="标签" width="180">
@@ -55,12 +60,8 @@
   </el-card>
 
   <!-- 对话框 -->
-  <el-dialog
-    v-model="dialogVisible"
-    title="知识点"
-    width="500"
-  >
-     <el-form>
+  <el-dialog v-model="dialogVisible" title="知识点" width="500">
+    <el-form>
       <el-form-item label="问题:">
         <el-input placeholder="请输入问题"></el-input>
       </el-form-item>
@@ -70,7 +71,7 @@
       <el-form-item label="标签:">
         <el-input placeholder="请输入标签"></el-input>
       </el-form-item>
-     </el-form>
+    </el-form>
     <template #footer>
       <div class="dialog-footer">
         <el-button @click="dialogVisible = false">取消</el-button>
@@ -104,8 +105,6 @@ const check = (msg) => {
 }
 
 const dialogVisible = ref(false)
-
- 
 </script>
 <style lang="scss" scoped>
 .knowledge-card {

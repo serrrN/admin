@@ -55,12 +55,8 @@
   </el-card>
 
   <!-- 对话框 -->
-  <el-dialog
-    v-model="dialogVisible"
-    title="知识点"
-    width="500"
-  >
-     <el-form :data="knowledgeData"> 
+  <el-dialog v-model="dialogVisible" title="知识点" width="500">
+    <el-form :data="knowledgeData">
       <el-form-item label="问题:" props="question">
         <el-input placeholder="请输入问题"></el-input>
       </el-form-item>
@@ -70,25 +66,23 @@
       <el-form-item label="标签:" props="tags">
         <el-input placeholder="请输入标签"></el-input>
       </el-form-item>
-     </el-form>
+    </el-form>
     <template #footer>
       <div class="dialog-footer">
         <el-button @click="dialogVisible = false">取消</el-button>
-        <el-button type="primary" @click="">
-          确定
-        </el-button>
+        <el-button type="primary" @click="">确定</el-button>
       </div>
     </template>
   </el-dialog>
 </template>
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
-import { getAllKnowledge ,addKnowledge} from '@/api/knowledgeManage'
+import { getAllKnowledge, addKnowledge } from '@/api/knowledgeManage'
 import type {
   KnowledgeResponseData,
   KnowledgeList,
   ResponseData,
-  Knowledge
+  Knowledge,
 } from '@/api/knowledgeManage/type'
 onMounted(() => {
   getTableData()
@@ -109,13 +103,13 @@ const dialogVisible = ref(false)
 
 //添加知识
 const knowledgeData = ref<Knowledge>({
-  question: "",
-  answer: "",
-  tags:[]
+  question: '',
+  answer: '',
+  tags: [],
 })
 const addKnowledgeData = async () => {
   dialogVisible.value = false
-  const res:ResponseData= await addKnowledge(knowledgeData.value)
+  const res: ResponseData = await addKnowledge(knowledgeData.value)
 }
 </script>
 <style lang="scss" scoped>

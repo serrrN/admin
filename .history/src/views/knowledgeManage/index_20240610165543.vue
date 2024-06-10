@@ -64,11 +64,11 @@
     width="500"
     :before-close="handleClose"
   >
-     <el-form>
+    <el-form>
       <el-form-item label="问题"></el-form-item>
       <el-form-item label="答案"></el-form-item>
       <el-form-item label="标签"></el-form-item>
-     </el-form>
+    </el-form>
     <template #footer>
       <div class="dialog-footer">
         <el-button @click="dialogVisible = false">Cancel</el-button>
