@@ -11,6 +11,9 @@ dependencies:
   axios:
     specifier: ^1.7.2
     version: 1.7.2
+  dayjs:
+    specifier: ^1.11.11
+    version: 1.11.11
   element-plus:
     specifier: ^2.7.4
     version: 2.7.4(vue@3.4.27)
